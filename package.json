@@ -9,10 +9,12 @@
   "resolutions": {
     "typescript": "4.7.4"
   },
+  
   "scripts": {
     "build": "lerna run build",
     "clean": "git clean -fxd -e .idea -e node_modules",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "prepare": "npm run build",
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.2",
