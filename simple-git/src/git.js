@@ -571,7 +571,7 @@ Git.prototype.revparse = function () {
  */
 Git.prototype.show = function (options, then) {
    return this._runTask(
-      straightThroughStringTask(['show', ...getTrailingOptions(arguments, 1)]),
+      straightThroughBufferTask(['show', ...getTrailingOptions(arguments, 1)]),
       trailingFunctionArgument(arguments)
    );
 };
